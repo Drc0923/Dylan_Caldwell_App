@@ -32,10 +32,14 @@
   flex-basis: 100%;
   text-decoration: none;
   color: #212529 !important;
+
 }
 .image {
   min-height: 20em;
   min-width: 17em;
+  max-width: 25em;
+  max-height: 20em;
+  border-radius: 10px;
 }
 
 
@@ -45,8 +49,6 @@ img {
   max-height: 100%;
   display: block; /* remove extra space below image */
 }
-
-
 
 
 .image {
@@ -64,6 +66,9 @@ img {
   justify-content: space-evenly;
 }
 
+.location {
+  font-weight: 500;
+}
 
 
 
