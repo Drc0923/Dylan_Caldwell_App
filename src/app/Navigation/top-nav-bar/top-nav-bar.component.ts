@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-nav-bar.component.css']
 })
 export class TopNavBarComponent {
+    img: string;
+    price: number;
 
+    constructor() {
+      this.img = "";
+      this.price = 0;
+    }
 }
