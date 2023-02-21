@@ -100,3 +100,23 @@ input[type="text"]:focus{
 input[type=submit]:hover {
   text-decoration: underline;
 }
+
+#topStrip {
+  border-style: solid;
+  border-color: lightgray;
+}
+
+.price {
+  width : 100%;
+  height: 70px;
+  background-color:#F5F5F5;
+}
+
+.astext {
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  cursor: pointer;
+  font-weight: 500;
+}

@@ -1,4 +1,13 @@
+
+<!-- top show prices bar-->
+<div class="price mx-auto" style="border-bottom: 10px #F5F5F5">
+   <p style="padding-left: 45%; padding-top: 20px; font-size: 17px; font-weight: 500">Show total prices up front <button class="astext" style="border-bottom: .125em solid; background-color: transparent">Learn More</button></p>
+</div>
+
+
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
   <!-- Left part of top Navbar -->
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg"
@@ -6,21 +15,21 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav" style="padding-left: 50%;">
         <button class="btn">
         <li class="nav-item" >
-          <a class="nav-link active " aria-current="page" type="submit" href="#">Stays</a>
+          <a class="nav-link active " aria-current="page" type="submit" href="#" style="padding-right: 20px">Stays</a>
         </li>
         </button>
         <button class="btn">
         <li class="nav-item ">
-          <a class="nav-link active " aria-current="page" href="#">Experiences</a>
+          <a class="nav-link active " aria-current="page" href="#" style="padding-left: 20px">Experiences</a>
         </li>
         </button>
         <button class="btn">
         <li class="nav-item ">
-          <a class="nav-link active "  aria-current="page" href="#">Online Experiences</a>
+          <a class="nav-link active "  aria-current="page" href="#" style="padding-left: 20px">Online Experiences</a>
         </li>
         </button>
       </ul>
@@ -29,25 +38,27 @@
     <div class="btn-group">
       <a class="nav-link active" style="margin-top: 15px; margin-right: 25px"  aria-current="page" href="#">Airbnb your home</a>
       <a class="nav-link active" style="margin-top: 15px; margin-right: 25px"  aria-current="page" href="#"><img src="https://cdn2.iconfinder.com/data/icons/viiva-basic-ui/32/globe-1024.png" alt="globe" width="20" height="20"></a>
-      <button type="button" class="btn dropdown-toggle dropdown-toggle-split" style="margin-right: 100px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div class="dropdown">
+      <a class="btn dropdown-toggle dropdown-toggle-split" style="margin-right: 100px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAVFBMVEX///+Xl5eUlJSRkZH6+vry8vKwsLDo6Oi+vr6cnJzd3d2YmJjj4+P4+PjExMT19fW2trampqbY2NigoKCpqanOzs7Z2dnJycnm5ubR0dHAwMCnp6dn+hpCAAAHRElEQVR4nO2dfXujIAzAJ4jvtVrtXHff/3uerjOg9kUhrLFPfv/cPbuTJQJJCBA/PhiGYRiGYRiGYRiGYRiGYWgRqji7nLuuO1+yWIWvFgeZQ1a2TSB7hBDDH0HTltnh1WJhcTzXotcsmNJrKurz8dXCuRNmbd9xwW367ow+9z1ewy69q96oZNrtWMdzKh+qd0Wm51cLakkRrNHvR8c8e7WwFhyrtfr96FjtzuZk+Z35d+/H6c66sVx04OAHhUjruk6vf110Y/lqoTcQRjMFhcx7Dw+BTKj6CCCfW1kZ7caoHuqp7DKosuU0O2bVzBSJeidRzqGZKNg7g3uCH2fuRDS7UHGqoEwvD//3ZaLjLlQMzSEqxPOApTSNjqjpz8XWkFfWasUTqja6UUTeJXTk25BWfvt86EWcTFlPdo99epTPGZUb463Y8GBhjO18zdB+FZEWVHxtevLLeJLwVDQGm9zSgwOF8SzZcRoKFyE/jbnoQTgUStDQKorW0bogGoQf9UxqrRowXCnN1aLuwsDOGqqAdicewFNI27zLGcZpTjE+vYB4jXUbKbykx/H6a2hAOvt8RIbwlrwRj8IJF+H0a4rRJMMC7MyGcHQJxAwEbQ1ModRlhRdCM+SGqRq7ULitfhJoh1r8DZZUbou453xBO9SsaSUwBqkxTEWFJBkWNZZgsACrUeRC45hjDS4Y7jmt2BS8obMfw2sJFwhGpGs2MISWaG3VQMwsnJuCyIHWvmmJZx/GwI1YVDM6aoQs0rgOdgwdsBndIYIXG92FSBDkwgNRQ8SmMHl/DRHnIdFROtpS4W5Lx905Yrb0PHqL3LmpgKY/hLW5dG4KWqKV23//uBSSuU5ZmgG9u0NrkR9CrOVqASGNQS1RE2EJBq+K2i5iB4sLt8GliC4tzIRw59ROBxrSMjQ9sC/jNkwh6e3uWLGBZNvm/W0T2OsmFpUOaNlcTESE8p48obcP7WdQLOkOUiORYbnHPQD73MTC7isK3r91lkxvH0paAc0vYGtsM/t644mgnRmIQUPL0C3RDZBzhld0J1qtfHTMTbQLzZloM4/cnv4jjDsIm/dVjvpYI+V7CfqIt2i2qXg0H/UkHQbGAcNtKhoKkgxnNMY4Fen62aSMO0SUx+iAcfpOiLWe/9M8rW8fEf0NYWqe1V/nFxPzrH5O/jqCMjQMZPN8ThXN5E4JUV9v8mWqGMjo8WxU0eSC18bT4S+imKgoZHW/W+JqeoFt0/n+F1KImY7t5VZHqks7028vCvZdM7tAKmRQd4VpQg5FWQezC4gi38EcHAnb+R3Sn3ujdZWUXZlU9a1LpLIlb0UnfM9VvKr5y41/o37faUmR3tLjHru76PxDsl5FYvu9qwizJH+uGZBXxb5moSqf1cNY9KJMS7Lr3gVFdNOWPFVSRPvwh0W9sfvMjqzpG5zH+t31FYaOtPsxbm/rN5ZOqtueukmvBZXu6BjRDW3C6pbUg3J1cs4mxa8OcXZJmttqipXLyr/ntBx/Qoq0Ot23kepUpWKppWwouo7jvNpHL6hsu+cjLu6WQ5tiCLeoRzMUgFrr4NSinJTjnQYPJHKu30bfVszW+rQO6n+oZqqgCBKLrH5i1B8ilo8q8tlS/dvyluz32I/EtmZO87yMfXyprv5G0Drx1U1GqKzd/HX8rw96WlKzcLKYF47nhQZUTKoDp0ZU/qMbcNkyKTtHfU/FhumOA+1VgRVm3TmxqmLSXY5qG39jiy6GgtLpOOip2ZLUGcjbP5jyhamgk4suLbICwv/tPWUq6LQWiG9lj5/jOzoPzZ13NyP6bZfX8d2JlaGg45o8stTQ7zlpw8o4Jx02JMf/rg+NvWz3dUBhNw/91rD5p8/3INybn6+f13Wh692Vh5wNkTDeZPeTbdyE3+LKxhjFujQQb8Tz+kMbP+m+WqKItgzkDzBZAoeVA0GxJJc72hX6NWcvwzhv/qZjVHfhHs6gWWB04RsmLQb0iXpieWk0oJg1qitURbYNf0c3DF+I2Gq1OWiTwtfaSV+fQ/wNy63HFXgKpw4+ZmFmt3ryswOnqyUhGlLbFbCXeAPsDGbRv4pQFgOup6GGM6Wlhj5y7LCThjpClNU89HN5SN8XQXVHF5uMsJeY8QiDFHkX+itKN9L4+XwSlE33kMgLt4H++6+AWXeuHUgVqC1Kre4IFhDQkKs7goUucPmeS1+jsgq9U2dIQK24d52G2tAQPBuJAnyC5E2TiGYJJ3xDk5XJNjofVzF1AgN7W0Q1UmzFx7cEIcuGbUrDxmb55Hb84ybgLLCXLRe7LAZ+9YzxyAR6Mt92jY9eed9bcVgyGnorD
         nu2HKXoJh00xHb4h3uf0H2Ih50vKLSNviMTpxbewsPXLv1p+HE4V9E2Kh9x1ThKyX09BI3Rb
         dGt4uTMNeFN9u4cAodo2NZ6053fX9TpxuenGYZhGIZhGIZhGIZ
         hGIZhGIZhGIZhGIZhGIZhGIZhGIZhGET+A5gRRJYiiniLAAAAAElFTkSuQmCC" alt-text="profile settings" width="50" height="50">
-      </button>
-      <div class="dropdown-menu dropdown-menu-right">
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right">
         <button class="dropdown-item" type="button">Signup</button>
         <button class="dropdown-item" type="button">Login</button>
         <button class="dropdown-item" type="button">Something else here</button>
-      </div>
+      </ul>
     </div>
+  </div>
   </div>
 <!-- End top-right navbar -->
   <! -- AirBnB search bar -->
 </nav>
 <nav class="navbar navbar-expand-lg fixed-bottom navbar-light bg-body-tertiary">
   <!-- Start of bottom Navbar -->
-  <div class="container-fluid">
+  <div class="container-fluid" style="opacity:1.0">
 
     <li class="nav-link">
         <a class="navbar-brand" style="margin-left: 50px; font-size: 14px; margin-right: 10px"  href="#" >&#169; 2023 Airbnb, Inc.</a>
