@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {airbnblistingModel} from "./cards/airbnb-listing.model";
+import {Airbnb_data} from "./cards/Airbnb_data";
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'untitled1';
-  price = 0;
+  listings: airbnblistingModel [] = [];
+
+  constructor() {
+    for (var listing of Airbnb_data) {
+      console.log(listing);
+      this.listings.push(listing);
+    }
+  }
 }
