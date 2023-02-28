@@ -18,6 +18,8 @@ export class CardsComponent {
   @Input() location: string;
   @Input() locationalt: string;
   @Input() link: string;
+  @Input() img2: string;
+  @Input() img3: string;
 
 
     constructor() {
@@ -29,6 +31,8 @@ export class CardsComponent {
       this.dates = "";
       this.locationalt = "";
       this.link = "";
+      this.img2 = "";
+      this.img3 = "";
     }
 
     ngOnInit(): void {
