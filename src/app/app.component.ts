@@ -9,12 +9,5 @@ import {Airbnb_data} from "./cards/Airbnb_data";
 })
 export class AppComponent {
   title = 'untitled1';
-  listings: airbnblistingModel [] = [];
 
-  constructor() {
-    for (var listing of Airbnb_data) {
-      console.log(listing);
-      this.listings.push(listing);
-    }
-  }
 }
