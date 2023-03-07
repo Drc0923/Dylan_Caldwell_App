@@ -1,0 +1,8 @@
+.top-bar {
+  width: 1440px;
+  height: 80px;
+  margin: 0 37.667px;
+}
+.txt:hover {
+  text-decoration: underline;
+}

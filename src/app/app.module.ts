@@ -32,6 +32,7 @@ import {SitemapLayoutComponent} from "./bottom-navbar/sitemap-layout.component";
     DestinationsLayoutComponent,
     HomeLayoutComponent,
     SitemapLayoutComponent,
+
   ],
   imports: [
     BrowserModule,
