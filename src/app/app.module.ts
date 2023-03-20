@@ -15,6 +15,11 @@ import {YourPrivacyChoicesComponent} from "./bottom-navbar/your-privacy-choices.
 import {DestinationsLayoutComponent} from "./bottom-navbar/destinations-layout.component";
 import { HomeLayoutComponent } from './home-layout/home-layout.component';
 import {SitemapLayoutComponent} from "./bottom-navbar/sitemap-layout.component";
+import { SitemapComponent } from './sitemap/sitemap.component';
+import { SitemapTopNavbarComponent } from './sitemap/sitemap-top-navbar/sitemap-top-navbar.component';
+import { SitemapSettingsComponent } from './sitemap/sitemap-settings/sitemap-settings.component';
+import { DestinationsComponent } from './sitemap/destinations/destinations.component';
+import { DestinationNumbersComponent } from './sitemap/destination-numbers/destination-numbers.component';
 
 
 @NgModule({
@@ -32,6 +37,11 @@ import {SitemapLayoutComponent} from "./bottom-navbar/sitemap-layout.component";
     DestinationsLayoutComponent,
     HomeLayoutComponent,
     SitemapLayoutComponent,
+    SitemapComponent,
+    SitemapTopNavbarComponent,
+    SitemapSettingsComponent,
+    DestinationsComponent,
+    DestinationNumbersComponent,
 
   ],
   imports: [
