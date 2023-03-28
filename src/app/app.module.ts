@@ -22,6 +22,8 @@ import { DestinationsComponent } from './sitemap/destinations/destinations.compo
 import { DestinationNumbersComponent } from './sitemap/destination-numbers/destination-numbers.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { PrivacyNavbarComponent } from './privacy/privacy-navbar/privacy-navbar.component';
+import {HttpClientModule} from "@angular/common/http";
+import {UserInfoComponent} from "./user-info.component";
 
 
 @NgModule({
@@ -46,11 +48,13 @@ import { PrivacyNavbarComponent } from './privacy/privacy-navbar/privacy-navbar.
     DestinationNumbersComponent,
     PrivacyComponent,
     PrivacyNavbarComponent,
+    UserInfoComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
