@@ -20,6 +20,8 @@ import { SitemapTopNavbarComponent } from './sitemap/sitemap-top-navbar/sitemap-
 import { SitemapSettingsComponent } from './sitemap/sitemap-settings/sitemap-settings.component';
 import { DestinationsComponent } from './sitemap/destinations/destinations.component';
 import { DestinationNumbersComponent } from './sitemap/destination-numbers/destination-numbers.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { PrivacyNavbarComponent } from './privacy/privacy-navbar/privacy-navbar.component';
 
 
 @NgModule({
@@ -42,6 +44,8 @@ import { DestinationNumbersComponent } from './sitemap/destination-numbers/desti
     SitemapSettingsComponent,
     DestinationsComponent,
     DestinationNumbersComponent,
+    PrivacyComponent,
+    PrivacyNavbarComponent,
 
   ],
   imports: [
