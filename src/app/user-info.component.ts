@@ -10,7 +10,7 @@ templateUrl: './user-info.component.html',
 )
 
 export class UserInfoComponent implements OnInit {
-  myInfo: userInfo | undefined;
+  myInfo: userInfo | undefined
   constructor(private http: HttpClient) {
    }
 
