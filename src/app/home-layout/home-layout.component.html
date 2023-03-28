@@ -1,0 +1,20 @@
+
+<app-total-price-component></app-total-price-component>
+<router-outlet></router-outlet>
+<app-top-nav-bar></app-top-nav-bar>
+<div>
+  <div *ngFor="let listing of listings">
+    <app-cards img="{{listing.img}}"
+               [price]='listing.price'
+               [rating]='listing.rating'
+               views="{{listing.views}}"
+               dates="{{listing.dates}}"
+               location="{{listing.location}}"
+               locationalt="{{listing.locationalt}}">
+    </app-cards>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<app-bottom-navbar></app-bottom-navbar>
+
+

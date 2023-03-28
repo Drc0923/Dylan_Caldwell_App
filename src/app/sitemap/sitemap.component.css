@@ -1,0 +1,84 @@
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+.top-right-div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  color: #222222;
+}
+.become-host {
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.host-input {
+  border: none;
+  background: none;
+  color: transparent;
+  position: absolute;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+}
+.div-class {
+  padding-top: 0px;
+  padding-bottom: 56px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 80px !important;
+  padding-right: 80px !important;
+  width: 100% !important;
+
+}
+.settings {
+  border-bottom: 1px solid #EBEBEB !important;
+  position: relative !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  min-width: 100% !important;
+  height: 100%;
+}
+.settings-link {
+  border-radius: 0px !important;
+  border-width: 0px !important;
+  border-bottom-style: solid !important;
+  cursor: pointer !important;
+  display: block !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  transition-property: color !important;
+  transition-timing-function: ease-out !important;
+}
+.destination-header {
+  margin-bottom: 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222222;
+  line-height: 30px;
+  padding-bottom: 18px;
+}
+.wrap{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 12054px;
+}
+.more-header {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 30px;
+  margin-top: 0;
+  display: block;
+}
+.wrap-new{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 288px;
+}

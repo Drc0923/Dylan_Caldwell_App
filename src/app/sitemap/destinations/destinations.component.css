@@ -1,0 +1,20 @@
+.destination-body {
+  width: 312.83px;
+  height: 48px;
+  float: left;
+
+}
+.destination-actual {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+  text-align: inherit;
+  color: #222222;
+  font-weight: 500;
+  font-size: 14px;
+
+
+}

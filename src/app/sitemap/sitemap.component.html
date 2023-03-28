@@ -1,0 +1,45 @@
+<app-sitemap-top-navbar></app-sitemap-top-navbar>
+
+
+
+<div style="padding: 0 80px 56px;
+height: 160.67px; width: 1411.33px; border-bottom: 1px solid #EBEBEB !important;" class="div-class">
+  <div style="width: 1251.33px; height: 1251.33px;" class="mx-auto">
+    <div style="display: inline-flex;" *ngFor="let setting of settings">
+    <app-sitemap-settings setting = '{{setting.setting}}'></app-sitemap-settings>
+    </div>
+  </div>
+</div>
+
+<div style="padding: 0 80px 56px; width: 1411.33px; height: 12110px;" class="mx-auto">
+  <div style="width: 1251.33px; height: 12054px;">
+    <h1 class="destination-header mx-auto">Top Destinations</h1>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; " class="wrap">
+    <app-destinations *ngFor="let destination of destinations" destination='{{destination.destination}}'></app-destinations>
+    </div>
+  </div>
+
+</div>
+<div style="padding-top: 0px; padding-bottom: 56px; margin-top: 0px; margin-bottom: 0px;" class="div-class">
+
+</div>
+<div style="width: 1440px; height: 398px; padding: 0 80px 56px" class="mx-auto">
+  <h1 class="more-header" style="padding-bottom: 20px">More Destinations</h1>
+  <div style="width: 48px; height: 48px; float: left" class="wrap-new" *ngFor="let numberList of numberLists">
+   <app-destination-numbers numberList='{{numberList.numberList}}'></app-destination-numbers>
+  </div>
+</div>
+
+<div style="width: 1440px; height: 81.74px; padding: 0 80px 56px;" class="mx-auto">
+ <div style="width: 1280px; height: 25.74px;">
+   <span style="padding: 0 6px; margin: 0">
+     <a style="color: #222222; cursor: pointer"><u style="font-weight: 600">Site Map</u>   ></a>
+   </span>
+   <span style="padding: 0 6px; margin: 0">
+     <a style="color: #222222; cursor: pointer"> <u style="font-weight: 600">Destinations</u>   ></a>
+    </span>
+
+     <span> destinations-L0-0</span>
+
+ </div>
+</div>
