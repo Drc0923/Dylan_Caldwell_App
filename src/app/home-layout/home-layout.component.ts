@@ -15,13 +15,13 @@ export class HomeLayoutComponent  implements OnInit {
   }
 
   ngOnInit(): void {
-    this.listingsService.getListings().subscribe((listings: airbnblistingModel[]) => {
+    this.listingsService.getListings().subscribe((listingsData: { [key: string]: airbnblistingModel }) => {
       console.log("Fetching listings from the server");
-      for (let listing of listings) {
+      const listings = Object.values(listingsData);
+      for (var listing of listings) {
         console.log(listing);
         this.listings.push(listing);
       }
     });
   }
 }
-
