@@ -11,6 +11,7 @@ import {TermsComponent} from "./terms/terms.component";
 import {HomeLayoutComponent} from "./home-layout/home-layout.component";
 import {SitemapComponent} from "./sitemap/sitemap.component";
 import {PrivacyComponent} from "./privacy/privacy.component";
+import {AddListingComponent} from "./cards/add-listing/add-listing.component";
 
 const routes:Routes = [
   {path: '', component: HomeLayoutComponent},
@@ -22,6 +23,7 @@ const routes:Routes = [
   {path: 'destinations', component: DestinationsLayoutComponent},
   {path: 'terms', component: TermsComponent},
   {path: 'home', component: HomeLayoutComponent},
+  {path: 'admin', component: AddListingComponent },
 ];
 
 @NgModule({

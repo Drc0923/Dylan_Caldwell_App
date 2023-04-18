@@ -18,4 +18,8 @@ export class ListingsService {
   getListings() {
     return this.http.get<{[key: string]: airbnblistingModel}>(this.baseUrl + this.listingsData);
   }
+
+  addListing(listing: airbnblistingModel): Observable<airbnblistingModel> {
+    return this.http.post<airbnblistingModel>(this.baseUrl + this.listingsData, listing);
+  }
 }

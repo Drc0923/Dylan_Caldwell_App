@@ -24,6 +24,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { PrivacyNavbarComponent } from './privacy/privacy-navbar/privacy-navbar.component';
 import {HttpClientModule} from "@angular/common/http";
 import {UserInfoComponent} from "./user-info.component";
+import { AddListingComponent } from './cards/add-listing/add-listing.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -49,12 +51,14 @@ import {UserInfoComponent} from "./user-info.component";
     PrivacyComponent,
     PrivacyNavbarComponent,
     UserInfoComponent,
+    AddListingComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
