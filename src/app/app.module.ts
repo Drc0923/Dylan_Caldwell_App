@@ -26,8 +26,11 @@ import {HttpClientModule} from "@angular/common/http";
 import {UserInfoComponent} from "./user-info.component";
 import { AddListingComponent } from './cards/add-listing/add-listing.component';
 import {FormsModule} from "@angular/forms";
-
-
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { environment } from '../environments/environment';
+import { AuthComponent } from './auth/auth.component';
+import {AngularFireDatabaseModule} from "@angular/fire/compat/database";
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,13 +55,16 @@ import {FormsModule} from "@angular/forms";
     PrivacyNavbarComponent,
     UserInfoComponent,
     AddListingComponent,
-
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,14 +14,9 @@ export class HomeLayoutComponent  implements OnInit {
   constructor(private listingsService: ListingsService) {
   }
 
-  ngOnInit(): void {
-    this.listingsService.getListings().subscribe((listingsData: { [key: string]: airbnblistingModel }) => {
-      console.log("Fetching listings from the server");
-      const listings = Object.values(listingsData);
-      for (var listing of listings) {
-        console.log(listing);
-        this.listings.push(listing);
-      }
+  ngOnInit() {
+    this.listingsService.getListings().subscribe(listings => {
+      this.listings = listings;
     });
   }
 }

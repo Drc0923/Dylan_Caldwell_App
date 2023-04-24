@@ -12,9 +12,12 @@ import {HomeLayoutComponent} from "./home-layout/home-layout.component";
 import {SitemapComponent} from "./sitemap/sitemap.component";
 import {PrivacyComponent} from "./privacy/privacy.component";
 import {AddListingComponent} from "./cards/add-listing/add-listing.component";
+import {AuthComponent} from "./auth/auth.component";
 
 const routes:Routes = [
-  {path: '', component: HomeLayoutComponent},
+  { path: '', redirectTo: '/auth', pathMatch: 'full' },
+  { path: 'auth', component: AuthComponent },
+  {path: 'home', component: HomeLayoutComponent},
   {path: 'bottom-navbar', component: BottomNavbarLayoutComponent},
   {path: 'term', component: TermLayoutComponent},
   {path: 'sitemap', component: SitemapComponent},
@@ -22,7 +25,6 @@ const routes:Routes = [
   {path: 'your-privacy-choices', component: YourPrivacyChoicesComponent},
   {path: 'destinations', component: DestinationsLayoutComponent},
   {path: 'terms', component: TermsComponent},
-  {path: 'home', component: HomeLayoutComponent},
   {path: 'admin', component: AddListingComponent },
 ];
 

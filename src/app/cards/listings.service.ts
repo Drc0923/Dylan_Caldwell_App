@@ -1,25 +1,18 @@
-import {HttpClient} from "@angular/common/http";
-import {airbnblistingModel} from "./airbnb-listing.model";
-import {Injectable} from "@angular/core";
-import {Observable} from "rxjs";
+import { Injectable } from '@angular/core';
+import { airbnblistingModel } from './airbnb-listing.model';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { Observable } from 'rxjs';
+import { from } from 'rxjs';
 
-@Injectable(
-  {providedIn: 'root'}
-)
-
+@Injectable({ providedIn: 'root' })
 export class ListingsService {
-  constructor(private http: HttpClient) {}
+  constructor(private db: AngularFireDatabase) {}
 
-
-  private  baseUrl:string = "https://airbnb-app-4478a-default-rtdb.firebaseio.com/Listings";
-  private listingsData:string = ".json";
-
-
-  getListings() {
-    return this.http.get<{[key: string]: airbnblistingModel}>(this.baseUrl + this.listingsData);
+  getListings(): Observable<airbnblistingModel[]> {
+    return this.db.list<airbnblistingModel>('Listings').valueChanges();
   }
 
-  addListing(listing: airbnblistingModel): Observable<airbnblistingModel> {
-    return this.http.post<airbnblistingModel>(this.baseUrl + this.listingsData, listing);
+  addListing(listing: airbnblistingModel): Promise<void> {
+    return this.db.list('Listings').push(listing).then(() => {});
   }
 }
